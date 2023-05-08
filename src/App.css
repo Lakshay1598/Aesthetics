@@ -1,0 +1,13 @@
+*{
+    background-color: black;
+}
+
+h1{
+    color: white;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    size: 100px;
+}

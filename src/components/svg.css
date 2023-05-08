@@ -1,0 +1,12 @@
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* 80% of viewport height */
+  }
+  
+  svg {
+    width: 70%; /* 50% of container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
