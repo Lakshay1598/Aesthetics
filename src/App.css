@@ -1,13 +1,50 @@
-*{
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
     background-color: black;
 }
 
-h1{
-    color: white;
+.parent_Main {
+    height: 100vh;
+    z-index: 10;
+    position: relative;
 }
 
-.title{
-    display: flex;
-    justify-content: center;
-    size: 100px;
+
+
+
+header {
+    z-index: 15;
+    margin-top: 10px;
+}
+
+.Sentence {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: white;
+    bottom: 0px;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .title {
+        margin-bottom: 4rem;
+    }
 }

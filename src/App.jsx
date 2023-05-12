@@ -2,26 +2,31 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Svg from './components/Svg'
+import mountains from './assets/mountains.jpg'
+import citylights from './assets/citylights.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className="parent_Main">
       <header>
         <Navbar />
       </header>
-      <h1>
         <Svg />
+      <div className='Sentence'>
         <div className='title'>
-          <a href="/">Aesthetics</a>
-        </div>
-        
+          Aesthetics
+        </div>  
+      </div>
 
-      </h1>
-
-
-    </>
+      <div className="vidHouse">
+        <div className=""></div>
+        <div className=""></div>
+        <div className=""></div>
+        <div className=""></div>
+      </div>
+    </div>
   )
 }
 
