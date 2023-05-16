@@ -1,13 +1,12 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Svg from './components/Svg'
-import mountains from './assets/mountains.jpg'
-import citylights from './assets/citylights.jpg'
+import HeroSection from './components/HeroSection'
 
 function App() {
 
   return (
-    <div className="parent_Main">
+    <div className="parent_Main " style={{transform: 'translate3d(0px, -0.01px, 0px)'}}>
       <header>
         <Navbar />
       </header>
@@ -18,12 +17,8 @@ function App() {
         </div>  
       </div>
 
-      <div className="vidHouse">
-        <div className="vid1" style={{backgroundImage: `url(${mountains})`}}></div>
-        <div className="vid2" style={{backgroundImage: `url(${citylights})`}}></div>
-        {/* <div className="vid3" style={{backgroundImage: `url(${mountains})`}}>lakshay</div>
-        <div className="vid4" style={{backgroundImage: `url(${mountains})`}}>lakshay</div> */}
-      </div>
+      <HeroSection />
+      
     </div>
   )
 }

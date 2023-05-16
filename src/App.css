@@ -11,45 +11,17 @@ body {
     height: 100vh;
     z-index: 10;
     position: relative;
+    min-height: 18vw;
 }
 
-.vid1,
-.vid2 {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 50%;
-    z-index: 5;
-    top: 0;
-    transition: background-image 0.3s ease-in-out;
+.transis{
+    transform: translate3d(0px, -0.01px, 0px);
 }
 
-.vid1 {
-    left: 0;
-    background-image: url(${mountains});
-    background-size: cover;
-}
-
-.vid2 {
-    right: 0;
-    background-image: url(${citylights});
-    background-size: cover;
-}
-
-/* .vid3 {
-    left: 0;
-    background-image: url(${mountains});
-    background-size: cover;
-}
-.vid4 {
-    left: 0;
-    background-image: url(${mountains});
-    background-size: cover;
-} */
 
 header {
     z-index: 15;
-    margin-top: 10px;
+    
 }
 
 .Sentence {
