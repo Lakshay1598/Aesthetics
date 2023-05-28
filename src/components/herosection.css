@@ -1,10 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .hero-container {
     position: absolute !important;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    
+
 }
 
 .vidHouse {
@@ -14,7 +18,7 @@
     /* visibility: hidden; */
 }
 
-.vid1{
+.vid1 {
     position: absolute;
     content: "";
     height: 100%;
@@ -32,8 +36,8 @@
     height: 100%;
     width: 25%;
     z-index: 5;
-    top: 0;
-    transition: background-image 0.3s ease-in-out;
+    top: -100%;
+    transition:  top 0.5s ease;
 }
 
 .vid1 {
@@ -52,8 +56,51 @@
     right: 75%;
     background-size: cover;
 }
+
 .vid4 {
     left: 75%;
     right: 100%;
     background-size: cover;
+}
+
+
+
+.container {
+    position: relative;
+    width: 25vw;
+    height: 100vh;
+}
+
+/* .image {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: top 0.5s ease;
+  }
+  
+  .container:hover .image {
+    top: 0;
+  }
+   */
+
+
+.image {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: slide-in 1.2s ease forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 0;
+    }
 }

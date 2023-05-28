@@ -11,12 +11,7 @@ function App() {
         <Navbar />
       </header>
         <Svg />
-      <div className='Sentence'>
-        <div className='title'>
-          Aesthetics
-        </div>  
-      </div>
-
+      
       <HeroSection />
       
     </div>

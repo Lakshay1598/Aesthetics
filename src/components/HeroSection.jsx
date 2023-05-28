@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './herosection.css'
 import mountains from '../assets/mountains.jpg'
 import citylights from '../assets/citylights.jpg'
@@ -7,13 +7,22 @@ import street from '../assets/street.jpg'
 
 
 const HeroSection = () => {
-    const mouseHover = (event) =>{
-        event.target.style.visibility = "inherit";
-    }
+
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
+
 
     return (
-        <div className='hero-container'>
-            <div className="vidHouse" onMouseOver={mouseHover}>
+        <>
+            <div className='hero-container'>
+                {/* <div className="vidHouse" onMouseOver={mouseHover}>
                 <img className="vid1" src={mountains} alt="Mountains" />
             </div>
             <div className="vidHouse" onMouseOver={mouseHover}>
@@ -24,9 +33,16 @@ const HeroSection = () => {
             </div>
             <div className="vidHouse" onMouseOver={mouseHover}>
                 <img className="vid4" src={street} alt="Street" />
+            </div> */}
+
+                <div className="container" >
+                    <img className="image" src={street} alt="Your Image" />
+                </div>
+
+
             </div>
 
-        </div>
+        </>
     )
 }
 
